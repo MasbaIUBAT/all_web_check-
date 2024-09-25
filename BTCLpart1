@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# List of websites (new batch)
+websites=(
+    "https://cems.com.bd"
+    "https://aamartech.com.bd"
+    "https://eemab.com.bd"
+    "https://amsl.com.bd"
+    "https://deshbidesh.com.bd"
+    "https://qsetup.com.bd"
+    "https://shebangladesh.com.bd"
+    "https://c2s.com.bd"
+    "https://k2s.com.bd"
+    "https://compare2buy.com.bd"
+    "https://comparetobuy.com.bd"
+    "https://connect2school.com.bd"
+    "https://propertyhub360.com.bd"
+    "https://propertyhub365.com.bd"
+    "https://foodoclock.com.bd"
+    "https://classiads.com.bd"
+)
+
+# Open each website in a private window
+for website in "${websites[@]}"
+do
+    firefox --private-window "$website" &  # Open in private mode
+done

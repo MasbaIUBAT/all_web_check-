@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# List of websites (new batch)
+websites=(
+    "https://asia-sourcing.com"
+    "https://cems-sportssourcing.com"
+    "https://bestofindiaexpo.in"
+    "https://aamartech.com"
+    "https://bizlinks.com.bd"
+    "https://foodoclock.com.bd"
+    "https://shebangladesh.com"
+    "https://cems-virtualshow.com"
+    "https://quikorder.app"
+    "https://gosourcing.llc"
+    "https://connect2school.net"
+    "https://eemab.com"
+    "https://gamedin.net"
+    "https://cems-printingpackaging.com"
+    "https://cemsonline.com"
+    "https://supernova365.com"
+    "https://letskonnect.net"
+    "https://cems-motorshow.com"
+    "https://viewbangladesh.com"
+)
+
+# Open each website in a private window
+for website in "${websites[@]}"
+do
+    firefox --private-window "$website" &  # Open in private mode
+done

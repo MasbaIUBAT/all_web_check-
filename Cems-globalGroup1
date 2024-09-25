@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# List of websites (new batch)
+websites=(
+    "https://amarekusheyboimela.gov.bd"
+    "https://water-exhibition.com"
+    "https://tenderbangladesh.com"
+    "https://meditexonline.com"
+    "https://cems-buildbd.com"
+    "https://visitbangladeshnow.com"
+    "https://bestofindiaexpo.in"
+    "https://boimelalive.com"
+    "https://sourcefromafrica.com"
+    "https://shohozkaj.com"
+    "https://sourcing-bangladesh.com"
+    "https://gamedin.net"
+    "https://supernova365.com"
+    "https://quikads.net"
+    "https://quikads.lk"
+    "https://quikads.in"
+    "https://fazyon.com"
+    "https://bicpen.com.bd"
+    "https://cems-motorshow.com"
+    "https://tstaffs.com"
+    "https://whichfair.com"
+    "https://dbtechnologiesbd.com"
+    "https://aamarcloud.com"
+)
+
+# Open each website in a private window
+for website in "${websites[@]}"
+do
+    firefox --private-window "$website" &  # Open in private mode
+done
